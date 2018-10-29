@@ -1,0 +1,25 @@
+written by kimoto on 06/16
+
+覚え書き
+ev3apiはhrp2/sdk/common/ev3apiに入っている
+
+/includeにはev3api.hが、/srcにはそれ以外のc,hファイルが入っている
+
+.hにはそこそこ詳しく説明されているので必要なら目を通す
+(さらに詳しいものは.cとuser.txtを)
+
+ev3api.h : include関係
+ev3api_motor.h : motor
+ev3api_sensor.h : sensor各種
+
+button,speaker,lcd,led : デバッグにつかえそう
+
+
+これを用いたクラスは
+hrp2/sdk/common/library/libcpp-ev3内
+/srcにcpp,/includeにh
+
+こっちもhは詳し目
+
+using namespace ev3api の記述が必要と思われる
+作業スペースに移動するべきか否かはまだ不明
